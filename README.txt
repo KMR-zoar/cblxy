@@ -1,4 +1,4 @@
-This software is released under the MIT License, see LICENSE.txt.
+﻿This software is released under the MIT License, see LICENSE.txt.
 このソフトウェアはMITライセンスのもとで公開しています。LICENSE.txtをご覧ください
 
 
@@ -29,6 +29,13 @@ blxy( 緯度 , 経度 , 座標系 )
 
 
 *更新*
+2014-06-12 - Zoar
+xy2bl(x,y)内にあるv3の計算を修正
+正 90.0 * t1 ** 2.0 + 45.0 * t1 ** 4.0
+        ^
+誤 90.0 + t1 ** 2.0 + 45.0 * t1 ** 4.0
+        ^
+
 2013-12-19 - Zoar
 github用にライセンスやREADMEを作成
 rubyのパスを削除
